@@ -29,18 +29,18 @@ const CarouseItem = ({
   return (
     <div className="w-full h-auto">
       {/* Image Section with title */}
-      <div className="relative h-[340px] md:h-[420px] lg:h-[660px]">
+      <div className="relative h-[340px] md:h-[420px] lg:h-[660px] rounded-sm">
         <Image
           src={imgUrl}
           layout="fill"
           objectFit="cover"
           alt={title}
-          className="w-full h-full"
+          className="w-full h-full rounded-sm"
         />
         <div className="absolute h-[40%] bottom-0 left-0 right-0 bg-gradient-to-t from-zinc-200 via-zinc-200/60 dark:from-zinc-900 dark:via-zinc-900/60 to-transparent">
           <div className="w-full h-auto py-2 px-4 md:px-8 lg:px-16 flex items-start justify-start">
             <div className="w-full md:w-1/2 lg:w-7/12 flex-col space-y-4">
-              <p className="text-black dark:text-white tracking-wide leading-loose text-sm md:text-xl font-semibold">
+              <p className="text-white dark:text-white tracking-wide leading-loose text-sm md:text-xl font-semibold">
                 {description}
               </p>
               <div
@@ -50,9 +50,9 @@ const CarouseItem = ({
                 <PlayCircle
                   size={60}
                   strokeWidth={1}
-                  className="cursor-pointer hover:scale-80 hover:text-violet-500 dark:hover:text-violet-500 text-black dark:text-white transition-all duration-200"
+                  className="cursor-pointer hover:scale-80 hover:text-violet-700 dark:hover:text-violet-500 text-white dark:text-white transition-all duration-200"
                 />
-                <h4 className="text-black dark:text-white text-sm md:text-lg">Play</h4>
+                <h4 className="text-white dark:text-white text-sm md:text-lg">Play</h4>
               </div>
             </div>
           </div>
@@ -107,8 +107,8 @@ const Carousel = () => {
               size={40}
               className={`cursor-pointer absolute right-16 bottom-[15%] ${
                 isDisabled
-                  ? "text-zinc-200/10 dark:text-zinc-200/60 cursor-not-allowed"
-                  : "text-black dark:text-white hover:text-violet-700 dark:hover:text-violet-700"
+                  ? "text-zinc-800/60 dark:text-zinc-200/60 cursor-not-allowed"
+                  : "text-white dark:text-white hover:text-violet-700 dark:hover:text-violet-700"
               } transition-all duration-150`}
             />
           );
@@ -119,8 +119,8 @@ const Carousel = () => {
               size={40}
               className={`cursor-pointer absolute right-5 bottom-[15%] ${
                 isDisabled
-                  ? "text-zinc-200/10 dark:text-zinc-200/60 cursor-not-allowed"
-                  : "text-black dark:text-white hover:text-violet-700 dark:hover:text-violet-700"
+                  ? "text-zinc-800/60 dark:text-zinc-200/60 cursor-not-allowed"
+                  : "text-white dark:text-white hover:text-violet-700 dark:hover:text-violet-700"
               } transition-all duration-150`}
             />
           );

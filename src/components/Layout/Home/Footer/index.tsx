@@ -4,7 +4,7 @@ import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "react-feather";
 
 const Footer = () => {
   return (
-    <div className="bg-black w-full h-auto mt-8">
+    <div className="bg-white dark:bg-black w-full h-auto mt-8">
       <div className="w-full h-full flex items-start px-4 md:px-8 lg:px-16 pb-4 pt-8 border-b border-zinc-200/30 dark:border-zinc-900/30">
         {/* Logo */}
         <div className="flex flex-col space-y-4 w-full md:w-1/2 lg:w-1/3 py-4">
