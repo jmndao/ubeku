@@ -7,10 +7,10 @@ import {
 } from "heroicons-react";
 import "react-alice-carousel/lib/alice-carousel.css";
 // Images
-import Image1 from "../../images/h-carousel/1.jpg";
-import Image2 from "../../images/h-carousel/2.jpg";
-import Image3 from "../../images/h-carousel/3.jpg";
-import Image4 from "../../images/h-carousel/4.jpg";
+import Image1 from "../../../images/h-carousel/1.jpg";
+import Image2 from "../../../images/h-carousel/2.jpg";
+import Image3 from "../../../images/h-carousel/3.jpg";
+import Image4 from "../../../images/h-carousel/4.jpg";
 import { PlayCircle } from "react-feather";
 
 type CarouselItemType = {
@@ -52,7 +52,9 @@ const CarouseItem = ({
                   strokeWidth={1}
                   className="cursor-pointer hover:scale-80 hover:text-violet-700 dark:hover:text-violet-500 text-white dark:text-white transition-all duration-200"
                 />
-                <h4 className="text-white dark:text-white text-sm md:text-lg">Play</h4>
+                <h4 className="text-white dark:text-white text-sm md:text-lg">
+                  Play
+                </h4>
               </div>
             </div>
           </div>
@@ -97,6 +99,7 @@ const Carousel = () => {
   return (
     <div className="w-full h-auto">
       <AliceCarousel
+        animationType="fadeout"
         mouseTracking
         disableDotsControls={true}
         animationDuration={1500}

@@ -2,9 +2,10 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Aperture, Film, Umbrella, Video } from "react-feather";
-import Carousel from "../components/Carousel";
+import Carousel from "../components/Carousel/Home";
 import Layout from "../components/Layout/Home";
 import RealizationCard from "../components/RealizationCard";
+import Rubrique from "../components/Rubrique";
 
 // Image Images
 import Image1 from "../images/h-carousel/1.jpg";
@@ -16,23 +17,6 @@ import ImageBg from "../images/home/bg.jpg";
 // Partners Image
 import DaustImg from "../images/partners/daust.png";
 
-const Rubrique = ({
-  icon,
-  title,
-}: {
-  icon: React.ReactNode;
-  title: string;
-}) => {
-  return (
-    <div className="flex flex-col space-y-2 items-center">
-      {/* Icon */}
-      {icon}
-      <h4 className="text-zinc-900 dark:text-zinc-200 font-semibold">
-        {title}
-      </h4>
-    </div>
-  );
-};
 
 const Partner = ({
   imgUrl,
