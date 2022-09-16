@@ -12,6 +12,7 @@ import Image1 from "../../images/h-carousel/1.jpg";
 import Image2 from "../../images/h-carousel/2.jpg";
 import Image3 from "../../images/h-carousel/3.jpg";
 import Image4 from "../../images/h-carousel/4.jpg";
+import { Badge } from "@nextui-org/react";
 
 type TabsType =
   | "animations"
@@ -23,19 +24,22 @@ type TabsElementType = {
   key: string;
   name: string;
   tabIndex: TabsType;
+  count: number;
 };
 
 const tabs: TabsElementType[] = [
-  { name: "Animations", tabIndex: "animations", key: "1-an-diw" },
-  { name: "Films", tabIndex: "films", key: "2-sie-is" },
-  { name: "Video Clips", tabIndex: "video_clips", key: "29-si-i" },
+  { name: "Animations", count: 4, tabIndex: "animations", key: "1-an-diw" },
+  { name: "Films", count: 2, tabIndex: "films", key: "2-sie-is" },
+  { name: "Video Clips", count: 2, tabIndex: "video_clips", key: "29-si-i" },
   {
     name: "Spot Publicitaire",
+    count: 2,
     tabIndex: "spot_publicitaire",
     key: "80-sie-uw",
   },
   {
     name: "Production Executive",
+    count: 0,
     tabIndex: "production_executive",
     key: "03-ie-uw",
   },
@@ -147,20 +151,21 @@ const Productions = () => {
         </h4>
       </div>
 
-      <div className="w-full flex space-x-4 justify-center overflow-x-scroll py-3 my-3 px-4 md:px-8 lg:px-16">
+      <div className="w-full mx-auto flex space-x-4 justify-center overflow-x-scroll py-3 my-3 px-4 md:px-8 lg:px-16">
         {tabs.map((tab) => {
           return (
-            <h4
-              key={tab.key}
-              onClick={() => setSelectedTab(tab.tabIndex)}
-              className={`uppercase text-sm font-semibold ${
-                selectedTab === tab.tabIndex
-                  ? "text-violet-700"
-                  : "text-zinc-900/60 dark:text-zinc-200/60"
-              } hover:text-violet-500 dark:hover:text-violet-500 hover:scale-105 transition-all duration-200 cursor-pointer`}
-            >
-              {tab.name}
-            </h4>
+            <Badge key={tab.key} color="error" content={tab.count} placement="top-right" className="pt-0.5 pr-3">
+              <h4
+                onClick={() => setSelectedTab(tab.tabIndex)}
+                className={`uppercase text-sm font-semibold text-center ${
+                  selectedTab === tab.tabIndex
+                    ? "text-violet-700"
+                    : "text-zinc-900/60 dark:text-zinc-200/60"
+                } hover:text-violet-500 dark:hover:text-violet-500 hover:scale-105 transition-all duration-200 cursor-pointer`}
+              >
+                {tab.name}
+              </h4>
+            </Badge>
           );
         })}
       </div>
