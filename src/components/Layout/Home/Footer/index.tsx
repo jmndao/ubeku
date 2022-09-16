@@ -23,17 +23,17 @@ const Footer = () => {
         {/* Section Navs */}
         <div className="flex-grow flex items-start justify-center space-x-8">
           <div className="flex flex-col space-y-2">
-            <Link href={"#"} passHref>
+            <Link href={"about"} passHref>
               <h3 className="text-zinc-900 dark:text-zinc-200 hover:text-violet-700 dark:hover:text-violet-700 transition-all duration-200 cursor-pointer">
                 - Qui Sommes-Nous ?
               </h3>
             </Link>
-            <Link href={"#"} passHref>
+            <Link href={"productions"} passHref>
               <h3 className="text-zinc-900 dark:text-zinc-200 hover:text-violet-700 dark:hover:text-violet-700 transition-all duration-200 cursor-pointer">
                 - Nos Productions
               </h3>
             </Link>
-            <Link href={"#"} passHref>
+            <Link href={"realizations"} passHref>
               <h3 className="text-zinc-900 dark:text-zinc-200 hover:text-violet-700 dark:hover:text-violet-700 transition-all duration-200 cursor-pointer">
                 - Nos Realisations
               </h3>
@@ -50,7 +50,7 @@ const Footer = () => {
                 - Notre Equipe
               </h3>
             </Link>
-            <Link href={"#"} passHref>
+            <Link href={"contact"} passHref>
               <h3 className="text-zinc-900 dark:text-zinc-200 hover:text-violet-700 dark:hover:text-violet-700 transition-all duration-200 cursor-pointer">
                 - Contact
               </h3>

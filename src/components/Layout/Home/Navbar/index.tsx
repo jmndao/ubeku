@@ -57,14 +57,14 @@ const Navbar = () => {
                 Productions
               </div>
             </Link>
-            <Link href="propos" passHref>
+            <Link href="about" passHref>
               <div className="text-zinc-200 dark:text-zinc-200 font-semibold cursor-pointer hover:scale-105 transition-all duration-200">
                 A Propos
               </div>
             </Link>
             <Link href="contact" passHref>
               <div className="text-zinc-200 dark:text-zinc-200 font-semibold cursor-pointer hover:scale-105 transition-all duration-200">
-                Nous Contacter
+                Contact
               </div>
             </Link>
           </div>
