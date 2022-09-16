@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import React from "react";
 import { Aperture, Film, Umbrella, Video } from "react-feather";
 import Carousel from "../components/Carousel";
@@ -168,9 +169,11 @@ const Home = () => {
                 communication, des annonceurs et partenaires pour de nombreux
                 secteurs {"d’activités"}.
               </p>
-              <div className="mt-4 mb-2 text-zinc-200 dark:text-zinc-900 font-light w-fit px-6 py-2 text-lg bg-zinc-900 dark:bg-zinc-200 hover:bg-violet-700 dark:hover:bg-violet-700 hover:text-white dark:hover:text-white transition-all rounded-sm cursor-pointer duration-200">
-                Voir Plus...
-              </div>
+              <Link href={"productions"} passHref>
+                <div className="mt-4 mb-2 text-zinc-200 dark:text-zinc-900 font-light w-fit px-6 py-2 text-lg bg-zinc-900 dark:bg-zinc-200 hover:bg-violet-700 dark:hover:bg-violet-700 hover:text-white dark:hover:text-white transition-all rounded-sm cursor-pointer duration-200">
+                  Voir Plus...
+                </div>
+              </Link>
             </div>
             <div className="relative w-96 h-96 rounded-sm">
               <Image

@@ -47,7 +47,7 @@ const Navbar = () => {
         <div className="flex flex-grow items-center justify-between space-x-8">
           {/* Nav Items */}
           <div className="hidden md:flex items-center space-x-2 md:space-x-4 lg:space-x-6">
-            <Link href="about" passHref>
+            <Link href="/" passHref>
               <div className="text-zinc-200 font-semibold dark:text-zinc-200 cursor-pointer hover:scale-105 transition-all duration-200">
                 Accueil
               </div>
