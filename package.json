@@ -16,7 +16,8 @@
     "react-alice-carousel": "^2.6.4",
     "react-dom": "18.2.0",
     "react-feather": "^2.0.10",
-    "tailwind-scrollbar-hide": "^1.1.7"
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@types/node": "18.0.5",
