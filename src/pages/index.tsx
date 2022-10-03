@@ -60,21 +60,11 @@ const Home = () => {
           </p>
         </div>
         {/* Rubriques */}
-        <div className="w-full lg:w-10/12 mx-auto grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 px-4 md:px-8 lg:px-16 py-2 my-8">
+        <div className="w-full lg:w-10/12 mx-auto grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 px-4 md:px-8 lg:px-16 py-2 my-8">
           <Rubrique
             title="Cinéma"
             icon={
               <Aperture
-                size={60}
-                strokeWidth={1}
-                className="text-zinc-900 dark:text-zinc-200"
-              />
-            }
-          />
-          <Rubrique
-            title="Média"
-            icon={
-              <Video
                 size={60}
                 strokeWidth={1}
                 className="text-zinc-900 dark:text-zinc-200"
@@ -92,7 +82,7 @@ const Home = () => {
             }
           />
           <Rubrique
-            title="Marketing Corporate"
+            title="Creativity Unbound"
             icon={
               <Umbrella
                 size={60}
